@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khush — Mindset Mastery</title>
+<meta name="description" content="12-week cricket mindset program for Khush.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0E1A2B; --panel:#15243A; --line:#2A3A52; --text:#F4EFE6; --muted:#B4BDCA;
+  --gold:#E8C26A; --red:#EF5B43;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55;font-size:17px}
+a{color:var(--gold)}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px}
+header{padding:56px 0 36px;position:relative;overflow:hidden}
+.ball{position:absolute;top:-90px;right:-90px;width:260px;height:260px;border-radius:50%;background:var(--red);opacity:.9}
+.ball::before,.ball::after{content:"";position:absolute;top:10px;bottom:10px;border-left:3px dashed var(--bg);border-radius:50%}
+.ball::before{left:60px;width:60px}.ball::after{left:75px;width:60px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.2em;color:var(--gold)}
+h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(56px,14vw,104px);line-height:.92;margin:10px 0 4px;position:relative}
+.sub{font-family:Anton,Impact,sans-serif;font-size:28px;letter-spacing:.14em;color:var(--red)}
+.lead{color:var(--muted);max-width:600px;margin-top:14px}
+nav{position:sticky;top:0;z-index:5;background:rgba(14,26,43,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+nav a{flex-shrink:0;text-decoration:none;color:var(--text);font-size:14px;font-weight:600;padding:8px 12px;border:1px solid var(--line);border-radius:999px;min-height:40px;display:inline-flex;align-items:center}
+nav a:hover{border-color:var(--gold);color:var(--gold)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:36px;letter-spacing:.02em;margin:0 0 6px}
+.intro{color:var(--muted);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.card b{display:block;color:var(--gold);font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+ol.steps{padding-left:22px;margin:0}
+ol.steps li{margin-bottom:10px}
+.phase{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--red);margin:26px 0 10px}
+.week{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
+.week summary{cursor:pointer;list-style:none;padding:16px 18px;display:flex;gap:14px;align-items:center;min-height:56px}
+.week summary::-webkit-details-marker{display:none}
+.wk{font-family:Anton,Impact,sans-serif;font-size:22px;color:var(--gold);width:44px;flex-shrink:0}
+.wt{font-weight:600;flex-grow:1}
+.chev{color:var(--muted);transition:transform .2s}
+.week[open] .chev{transform:rotate(90deg)}
+.week .body{padding:0 18px 16px 76px;color:var(--muted)}
+.week .body p{margin:0 0 8px}
+.week .body strong{color:var(--text)}
+@media(max-width:520px){.week .body{padding-left:18px}}
+.table-box{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--muted);font-weight:600;font-size:13px;letter-spacing:.06em}
+tr:last-child td{border-bottom:none}
+td.c{text-align:center}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--gold);cursor:pointer}
+.qa label{display:block;font-weight:600;margin:14px 0 6px}
+.qa textarea,.qa input[type=text]{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:16px}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;white-space:pre-wrap;font-size:15px;margin:0}
+button{font:inherit;font-weight:700;background:var(--gold);color:var(--bg);border:0;border-radius:999px;padding:12px 20px;min-height:44px;cursor:pointer;margin-top:12px}
+button.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+ul.list{padding-left:20px;margin:0}
+ul.list li{margin-bottom:6px}
+footer{padding:36px 0 60px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="ball" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">CRICKET MINDSET COACHING</div>
+    <h1>MINDSET<br>MASTERY</h1>
+    <div class="sub">KHUSH'S 12-WEEK PROGRAM</div>
+    <p class="lead">Build confidence, stay composed under pressure, and perform more consistently in matches. One session a week, ten minutes a day.</p>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#how">How it works</a>
+    <a href="#plan">12 weeks</a>
+    <a href="#pregame">Pre-game</a>
+    <a href="#review">Post-game</a>
+    <a href="#daily">Daily</a>
+    <a href="#tracker">Tracker</a>
+    <a href="#resources">Resources</a>
+    <a href="#books">Books</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="how">
+  <h2>How it works</h2>
+  <p class="intro">Five pieces, repeated every week.</p>
+  <div class="grid">
+    <div class="card"><b>Weekly session</b>45–60 min, same day each week. Review, learn, practise, commit.</div>
+    <div class="card"><b>Daily check-in</b>2 min on WhatsApp every evening by 9pm.</div>
+    <div class="card"><b>Daily habits</b>10 min across morning and night.</div>
+    <div class="card"><b>Pre-game routine</b>15 min on every match day.</div>
+    <div class="card"><b>Post-game review</b>15 min within 24 hours of every match.</div>
+  </div>
+  <p class="phase">EACH WEEKLY SESSION</p>
+  <ol class="steps">
+    <li><strong>Review (10 min)</strong> — last week's tracker, check-ins and match reviews.</li>
+    <li><strong>Learn (15 min)</strong> — this week's theme and why it matters.</li>
+    <li><strong>Practise (15 min)</strong> — do the exercise together, out loud.</li>
+    <li><strong>Commit (5 min)</strong> — one homework task and one cricket goal.</li>
+  </ol>
+</section>
+
+<section id="plan">
+  <h2>The 12 weeks</h2>
+  <p class="intro">Tap a week to open it.</p>
+
+  <div class="phase">WEEKS 1–4 · FOUNDATIONS</div>
+  <details class="week"><summary><span class="wk">01</span><span class="wt">Goal setting</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Write one season goal, three monthly goals and weekly process goals — things you control, not scores.</p><p><strong>Homework:</strong> Read your goals every morning.</p></div></details>
+  <details class="week"><summary><span class="wk">02</span><span class="wt">Belief audit</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> List 10 beliefs about your cricket. Mark each one helpful or limiting.</p><p><strong>Homework:</strong> Pick the 3 most limiting beliefs.</p></div></details>
+  <details class="week"><summary><span class="wk">03</span><span class="wt">Belief modification</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Rewrite each limiting belief using evidence against it. "I always nick off early" becomes "I've survived the first 10 balls plenty of times."</p><p><strong>Homework:</strong> Read your new beliefs every night.</p></div></details>
+  <details class="week"><summary><span class="wk">04</span><span class="wt">Routine &amp; habits</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Design a morning and night routine. Start the habit tracker.</p><p><strong>Homework:</strong> Hit 5 out of 7 days on the tracker.</p></div></details>
+
+  <div class="phase">WEEKS 5–8 · SKILLS</div>
+  <details class="week"><summary><span class="wk">05</span><span class="wt">Visualisation</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> 10-minute guided script — walk out, take guard, play three perfect shots or bowl three perfect balls. See, hear and feel every detail.</p><p><strong>Homework:</strong> Visualise for 5–10 minutes daily.</p></div></details>
+  <details class="week"><summary><span class="wk">06</span><span class="wt">Self-talk &amp; affirmations</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Catch negative self-talk. Build 5 personal affirmations and 3 cue words ("watch it", "next ball", "breathe").</p><p><strong>Homework:</strong> Say your affirmations each morning.</p></div></details>
+  <details class="week"><summary><span class="wk">07</span><span class="wt">Focus &amp; concentration</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Switch off between balls, switch on with a trigger — tap the bat, look at the sightscreen.</p><p><strong>Homework:</strong> Use your trigger in every net session.</p></div></details>
+  <details class="week"><summary><span class="wk">08</span><span class="wt">Confidence building</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Build a "confidence bank" — your 20 best cricket moments, written in detail.</p><p><strong>Homework:</strong> Add one new deposit every week.</p></div></details>
+
+  <div class="phase">WEEKS 9–12 · PERFORMING UNDER PRESSURE</div>
+  <details class="week"><summary><span class="wk">09</span><span class="wt">Pressure management</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Box breathing (in 4, hold 4, out 4, hold 4). Simulate pressure in the nets: "6 needed off the last over."</p><p><strong>Homework:</strong> Box breathing before bed.</p></div></details>
+  <details class="week"><summary><span class="wk">10</span><span class="wt">Pre-game routine</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Rehearse the full pre-game routine until it's automatic.</p><p><strong>Homework:</strong> Run it at every match.</p></div></details>
+  <details class="week"><summary><span class="wk">11</span><span class="wt">Handling failure</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> The 3-step reset — accept it, learn one thing, let it go. Review a bad dismissal calmly.</p><p><strong>Homework:</strong> Post-game review after every match.</p></div></details>
+  <details class="week"><summary><span class="wk">12</span><span class="wt">Gratitude &amp; review</span><span class="chev" aria-hidden="true">›</span></summary><div class="body"><p><strong>Exercise:</strong> Three things you're grateful for in cricket. Compare your week 1 goals and beliefs to now.</p><p><strong>Homework:</strong> Set goals for the next 12 weeks.</p></div></details>
+</section>
+
+<section id="pregame">
+  <h2>Pre-game routine</h2>
+  <p class="intro">Same steps, every match day.</p>
+  <ol class="steps">
+    <li><strong>Night before</strong> — pack kit, 5-min visualisation, read goals, phone off 30 min before bed.</li>
+    <li><strong>Morning</strong> — affirmations and one process goal for today.</li>
+    <li><strong>At the ground</strong> — walk the pitch, check conditions, 2 min box breathing.</li>
+    <li><strong>Before batting or bowling</strong> — 3 deep breaths, cue word, picture the first ball going well.</li>
+    <li><strong>Between balls</strong> — switch off, then trigger to switch on. One ball at a time.</li>
+    <li><strong>After a mistake</strong> — breathe, "next ball", reset. Review it later, not now.</li>
+  </ol>
+</section>
+
+<section id="review">
+  <h2>Post-game review</h2>
+  <p class="intro">Fill this in within 24 hours, then copy it to WhatsApp.</p>
+  <form class="qa" id="reviewForm" onsubmit="return false">
+    <label for="r1">Match, date, result</label><input type="text" id="r1">
+    <label for="r2">My performance (runs / wickets / catches)</label><input type="text" id="r2">
+    <label for="r3">Mindset score before the match (1–10)</label><input type="text" id="r3">
+    <label for="r4">Did I complete my pre-game routine?</label><input type="text" id="r4">
+    <label for="r5">Did I hit today's process goal?</label><input type="text" id="r5">
+    <label for="r6">3 things I did well</label><textarea id="r6" rows="3"></textarea>
+    <label for="r7">1 thing to improve</label><input type="text" id="r7">
+    <label for="r8">A moment I felt pressure — what did I do?</label><textarea id="r8" rows="2"></textarea>
+    <label for="r9">What I'll practise this week</label><input type="text" id="r9">
+    <div class="row">
+      <button type="button" id="sendReview">Send on WhatsApp</button>
+      <button type="button" class="ghost" id="clearReview">Clear</button>
+    </div>
+  </form>
+</section>
+
+<section id="daily">
+  <h2>Daily habits</h2>
+  <p class="intro">About 10 minutes a day.</p>
+  <ul class="list">
+    <li>Read goals and affirmations (2 min)</li>
+    <li>Visualisation, 5–10 min (from week 5)</li>
+    <li>3 rounds of box breathing (2 min)</li>
+    <li>Write 3 good things from the day (2 min)</li>
+    <li>Phone off 30 min before bed</li>
+  </ul>
+  <p class="phase">EVENING CHECK-IN</p>
+  <pre id="checkin">Day __ check-in
+Goals read: Y/N
+Visualised: Y/N
+Breathing: Y/N
+Gratitude: 1. __ 2. __ 3. __
+Mindset today (1–10): __
+One win today: __</pre>
+  <div class="row">
+    <button type="button" id="sendCheckin">Open in WhatsApp</button>
+    <button type="button" class="ghost" id="copyCheckin">Copy</button>
+  </div>
+</section>
+
+<section id="tracker">
+  <h2>Habit tracker</h2>
+  <p class="intro">Tick each day. Target 5 of 7. Saved on this phone.</p>
+  <div class="table-box">
+    <table id="trackerTable">
+      <thead><tr><th>Habit</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th><th>/7</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <button type="button" class="ghost" id="resetWeek">Start new week</button>
+</section>
+
+<section id="resources">
+  <h2>Free resources</h2>
+  <p class="intro">Guided meditation and visualisation, all free.</p>
+  <div class="grid">
+    <div class="card"><b>Insight Timer</b>Free app. Search "athlete visualisation" or "sports focus".</div>
+    <div class="card"><b>Medito</b>Free non-profit app. Short daily breathing and calm sessions.</div>
+    <div class="card"><b>YouTube</b>Search "guided visualisation for cricketers" before matches.</div>
+    <div class="card"><b>Headspace / Calm</b>Free tiers for sleep and pre-match nerves.</div>
+  </div>
+</section>
+
+<section id="books">
+  <h2>Books</h2>
+  <p class="intro">One a month, about 10 pages a day.</p>
+  <div class="grid">
+    <div class="card"><b>Month 1</b>The Champion's Mind — Jim Afremow</div>
+    <div class="card"><b>Month 2</b>The Chimp Paradox — Steve Peters</div>
+    <div class="card"><b>Month 3</b>Atomic Habits — James Clear</div>
+    <div class="card"><b>Extra</b>Mind Gym — Gary Mack</div>
+    <div class="card"><b>Extra</b>Mindset — Carol Dweck</div>
+    <div class="card"><b>Extra</b>The Inner Game of Tennis — W. Timothy Gallwey</div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">One ball at a time.</footer>
+
+<script>
+(function(){
+  var HABITS=["Goals + affirmations","Visualisation","Box breathing","Gratitude (3 things)","Phone off before bed","Check-in sent"];
+  var KEY="khush-tracker-v1";
+  var state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){state={};}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+  var tbody=document.querySelector("#trackerTable tbody");
+  function render(){
+    tbody.innerHTML="";
+    HABITS.forEach(function(h,i){
+      var tr=document.createElement("tr");
+      var td=document.createElement("td");td.textContent=h;tr.appendChild(td);
+      var total=0;
+      for(var d=0;d<7;d++){
+        var k=i+"-"+d;
+        var c=document.createElement("td");c.className="c";
+        var cb=document.createElement("input");cb.type="checkbox";cb.checked=!!state[k];
+        cb.setAttribute("aria-label",h+" day "+(d+1));
+        if(state[k])total++;
+        (function(k){cb.addEventListener("change",function(e){state[k]=e.target.checked;save();render();});})(k);
+        c.appendChild(cb);tr.appendChild(c);
+      }
+      var t=document.createElement("td");t.className="c";t.textContent=total;
+      t.style.color=total>=5?"#E8C26A":"";t.style.fontWeight="700";
+      tr.appendChild(t);tbody.appendChild(tr);
+    });
+  }
+  render();
+  document.getElementById("resetWeek").addEventListener("click",function(){
+    if(confirm("Clear all ticks and start a new week?")){state={};save();render();}
+  });
+
+  function wa(text){window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank");}
+  var checkin=document.getElementById("checkin").textContent;
+  document.getElementById("sendCheckin").addEventListener("click",function(){wa(checkin);});
+  document.getElementById("copyCheckin").addEventListener("click",function(e){
+    var b=e.target;
+    try{navigator.clipboard.writeText(checkin).then(function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy";},1500);});}catch(err){}
+  });
+
+  var labels=Array.prototype.map.call(document.querySelectorAll("#reviewForm label"),function(l){return l.textContent;});
+  var fields=["r1","r2","r3","r4","r5","r6","r7","r8","r9"];
+  document.getElementById("sendReview").addEventListener("click",function(){
+    var out="Post-game review\n";
+    fields.forEach(function(id,i){out+="\n"+labels[i]+":\n"+(document.getElementById(id).value||"-")+"\n";});
+    wa(out);
+  });
+  document.getElementById("clearReview").addEventListener("click",function(){
+    fields.forEach(function(id){document.getElementById(id).value="";});
+  });
+})();
+</script>
+</body>
+</html>
